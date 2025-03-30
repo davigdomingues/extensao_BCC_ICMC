@@ -1,15 +1,12 @@
-1) Crie um testador de números primos
+1) Crie um testador de números primos:
 Entrada: um número 
-
 Saída: É um primo ou não
 
 2) Crie um jogo de adivinhar o número
 
 3) Crie um gerador de diamantes
 Exemplo: entrada = 5
-
 Saída:
-
     *
    ***
   *****
