@@ -19,4 +19,3 @@ while True:
         
     else:
         print("Tente um número maior\n")
-    
