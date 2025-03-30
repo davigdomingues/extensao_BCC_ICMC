@@ -1,3 +1,5 @@
+#Verificador de primos
+
 n = int(input("Número: "))
 verificar = True
 
