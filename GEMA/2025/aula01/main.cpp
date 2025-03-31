@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -30,7 +31,36 @@ int main() {
         cout<<"N"<<endl;
     */
 
-    /*Exercício 3*/
+    /*Exercício 3
+    double P1, P2, C1, C2;
+    cin>>P1>>C1>>P2>>C2;
+
+    while (P1 < 10 || P1 > 100 || P2 < 10 || P2 > 100 || C1 < 10 || C1 > 100 || C2 < 10 || C2 > 100)
+        cin>>P1>>C1>>P2>>C2;
+
+    if(P1*C1 == P2*C2)
+        cout<<"0"<<endl;
+
+    if(P1*C1 < P2*C2)
+        cout<<"1"<<endl;
+
+    if(P1*C1 > P2*C2)
+        cout<<"-1"<<endl;
+    */
+
+    /*Exercício 4
+    int Ia, Ib, Fa, Fb;
+    cin>>Ia>>Ib>>Fa>>Fb;
+
+    if (Ia == Fa && Ib == Fb)
+        cout<<"0";
+
+    else if ((Ia != Fa && Ib != Fb) || (Ia == Fb && Ib == Fa))
+        cout<<"1";
+
+    else
+        cout<<"2";
+    */
 
     /*Exercício 5
     int n, x = 0;
@@ -62,23 +92,6 @@ int main() {
     */
 
     /*Exercício 7
-    double P1, P2, C1, C2;
-    cin>>P1>>C1>>P2>>C2;
-
-    while (P1 < 10 || P1 > 100 || P2 < 10 || P2 > 100 || C1 < 10 || C1 > 100 || C2 < 10 || C2 > 100)
-        cin>>P1>>C1>>P2>>C2;
-
-    if(P1*C1 == P2*C2)
-        cout<<"0"<<endl;
-
-    if(P1*C1 < P2*C2)
-        cout<<"1"<<endl;
-
-    if(P1*C1 > P2*C2)
-        cout<<"-1"<<endl;
-    */
-
-    /*Exercício 8
     int sum = 0, difference;
     double k,w,n;
     cin>>k>>w>>n;
@@ -96,6 +109,31 @@ int main() {
 
     else
         cout<<endl<<"There is no need for his friend to borrow him money!"<<endl;
+    */
+
+    /*Exercício 8
+    int reta, pontosDangerous;
+    cin >> reta;
+
+    // Não importa como inserir os valores de x e de y para a generalização, só fiz assim para praticar alocação dinâmica de arrays :)
+    int **trajeto = new int*[reta];
+    for (int i = 0; i < reta; i++)
+        trajeto[i] = new int[2];
+
+    for (int i = 0; i < reta; i++)
+        cin >> trajeto[i][0] >> trajeto[i][1];
+
+    pontosDangerous = (reta - 4)/2;
+
+    if (pontosDangerous < 0)
+        pontosDangerous = 0;
+
+    cout << pontosDangerous << endl;
+
+    for (int i = 0; i < reta; i++)
+        delete[] trajeto[i];
+
+    delete[] trajeto;
     */
 
     /*Exercício 9
