@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    /*ExercÌcio 1:
+    /*Exerc√≠cio 1:
     int A, B;
 
     cin>>A>>B;
@@ -15,7 +15,7 @@ int main() {
     cout <<(A+B)/2<< endl;
     */
 
-    /*ExercÌcio 2
+    /*Exerc√≠cio 2
     int A, M;
 
     cin>>A>>M;
@@ -30,38 +30,7 @@ int main() {
         cout<<"N"<<endl;
     */
 
-    /*ExercÌcio 3*/
-
-    /*ExercÌcio 5
-    int n, x = 0;
-    cin>>n;
-
-    while (n < 1 || n > pow(10,15))
-        cin>>n;
-
-    for (int i = 1; i <= n; i++)
-        x += pow(-1,i)*i;
-
-    cout<<x<<endl;
-    */
-
-    /*ExercÌcio 6
-    int n, k;
-    cin>>n>>k;
-
-    while (n < 1 || k > pow(10,9))
-        cin>>n>>k;
-
-    int i;
-    for (i = n + 1; ; i++){
-        if (i%k == 0)
-            break;
-    }
-
-    cout<<i;
-    */
-
-    /*ExercÌcio 7
+    /*Exerc√≠cio 3
     double P1, P2, C1, C2;
     cin>>P1>>C1>>P2>>C2;
 
@@ -78,7 +47,50 @@ int main() {
         cout<<"-1"<<endl;
     */
 
-    /*ExercÌcio 8
+    /*Exerc√≠cio 4
+    int Ia, Ib, Fa, Fb;
+    cin>>Ia>>Ib>>Fa>>Fb;
+
+    if (Ia == Fa && Ib == Fb)
+        cout<<"0";
+
+    else if ((Ia != Fa && Ib != Fb) || (Ia == Fb && Ib == Fa))
+        cout<<"1";
+
+    else
+        cout<<"2";
+    */
+
+    /*Exerc√≠cio 5
+    int n, x = 0;
+    cin>>n;
+
+    while (n < 1 || n > pow(10,15))
+        cin>>n;
+
+    for (int i = 1; i <= n; i++)
+        x += pow(-1,i)*i;
+
+    cout<<x<<endl;
+    */
+
+    /*Exerc√≠cio 6
+    int n, k;
+    cin>>n>>k;
+
+    while (n < 1 || k > pow(10,9))
+        cin>>n>>k;
+
+    int i;
+    for (i = n + 1; ; i++){
+        if (i%k == 0)
+            break;
+    }
+
+    cout<<i;
+    */
+
+    /*Exerc√≠cio 7
     int sum = 0, difference;
     double k,w,n;
     cin>>k>>w>>n;
@@ -98,7 +110,32 @@ int main() {
         cout<<endl<<"There is no need for his friend to borrow him money!"<<endl;
     */
 
-    /*ExercÌcio 9
+    /*Exerc√≠cio 8
+    int reta, pontosDangerous;
+    cin >> reta;
+
+    // N√£o importa como inserir os valores de x e de y para a generaliza√ß√£o, s√≥ fiz assim para praticar aloca√ß√£o din√¢mica de arrays :)
+    int **trajeto = new int*[reta];
+    for (int i = 0; i < reta; i++)
+        trajeto[i] = new int[2];
+
+    for (int i = 0; i < reta; i++)
+        cin >> trajeto[i][0] >> trajeto[i][1];
+
+    pontosDangerous = (reta - 4)/2;
+
+    if (pontosDangerous < 0)
+        pontosDangerous = 0;
+
+    cout << pontosDangerous << endl;
+
+    for (int i = 0; i < reta; i++)
+        delete[] trajeto[i];
+
+    delete[] trajeto;
+    */
+
+    /*Exerc√≠cio 9
     int t, a, b, c;
 
     cin>>t;
@@ -136,7 +173,7 @@ int main() {
     }
     */
 
-    /*ExercÌcio 10
+    /*Exerc√≠cio 10
     int w;
     cin>>w;
 
