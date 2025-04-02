@@ -154,47 +154,42 @@ int main() {
     return 0;
     */
 
-    /*Exercício 6 (esqueci que é consecutivo....):
+    /*Exercício 6:
     int N;
     cin>>N;
 
-    while (N < 1 || N > pow(10,4)){
+    while (N < 1 || N > pow(10,4))
         cin>>N;
-        cout<<endl;
-    }
 
     int *numbers = new int[N];
-    for (int i = 0; i < N; i++){
+    for (int i = 0; i < N; i++) {
         cin>>numbers[i];
 
-        while (numbers[i] < (-1)*pow(2,31) || numbers[i] > pow(2,31) - 1){
+        while (numbers[i] < pow(2,31)*(-1) || numbers[i] > pow(2,31) - 1)
             cin>>numbers[i];
-            cout<<endl;
-        }
     }
 
+    int *sequential_counters = new int[N];
+    for (int i = 0; i < N; i++)
+        sequential_counters[i] = 1;
 
-    int sentinel;
-    int *counters = new int[N];
-    for (int i = 0 ; i < N; i++)
-        counters[i] = 0;
-
-    for (int i = 1; i <= N; i++){
-        sentinel = numbers[i-1];
-
-        for (int j = 0; j < N; j++){
-            if (sentinel == numbers[j])
-                counters[j]++;
-        }
-    }
-
-    int higher_counters = 0;
     for (int i = 0; i < N; i++){
-        if (counters[i] > higher_counters)
-            higher_counters = counters[i];
+        for (int j = i + 1; j < N; j++) {
+            if (numbers[i] == numbers[j])
+                sequential_counters[i]++;
+
+            else
+                break;
+        }
     }
 
-    cout<<higher_counters;
+    int maior = -1, higher_number;
+    for (int i = 0; i < N; i++){
+        if (sequential_counters[i] > maior)
+            maior = sequential_counters[i];
+    }
+
+    cout<<maior;
     */
 
     /*Exercício 7:
@@ -248,7 +243,31 @@ int main() {
     return 0;
     */
 
-    //Exercício 9:
+    /*Exercício 12:
+    int N, Ia = 0, Ib = 0;
+    cin>>N;
+
+    while (N < 2 || N > pow(10,5))
+        cin>>N;
+
+    int *comands = new int[N];
+    for (int i = 0; i < N; i++){
+        cin>>comands[i];
+
+        while (comands[i] < 1 || comands[i] > 2)
+            cin>>comands[i];
+
+        if (comands[i] == 1)
+            Ia = !Ia;
+
+        else {
+            Ia = !Ia;
+            Ib = !Ib;
+        }
+    }
+
+    cout<<Ia<<endl<<Ib<<endl;
+    */
 
     return 0;
 }
