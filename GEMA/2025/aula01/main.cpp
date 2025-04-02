@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    /*Exercício 1:
+    /*ExercÃ­cio 1:
     int A, B;
 
     cin>>A>>B;
@@ -16,7 +16,7 @@ int main() {
     cout <<(A+B)/2<< endl;
     */
 
-    /*Exercício 2
+    /*ExercÃ­cio 2
     int A, M;
 
     cin>>A>>M;
@@ -174,7 +174,7 @@ int main() {
     }
     */
 
-    /*Exercício 10
+    /*ExercÃ­cio 10
     int w;
     cin>>w;
 
