@@ -1,6 +1,4 @@
-#include <iostream>
-#include <cmath>
-#include <cstring>
+#include <bits/stdc++.h> // usa todas as bibliotecas do C++
 
 using namespace std;
 
@@ -44,8 +42,6 @@ int main() {
         if (number % i == 0)
             cout<<i<<endl;
     }
-
-    return 0;
     */
 
     /*Exercício 3:
@@ -71,8 +67,6 @@ int main() {
     }
 
     cout<<endl<<higher;
-
-    return 0;
     */
 
     /*Exercício 4:
@@ -123,9 +117,6 @@ int main() {
     }
 
     cout<<endl<<coordenates[0]<<" "<<coordenates[1];
-
-
-    return 0;
     */
 
     /*Exercício 5:
@@ -150,8 +141,6 @@ int main() {
     cout<<endl;
     for (int i = 0; i < N; i++)
         cout<<results[i]<<endl;
-
-    return 0;
     */
 
     /*Exercício 6:
@@ -212,8 +201,6 @@ int main() {
             cout<<n<<endl;
         }
     }
-
-    return 0;
     */
 
     /*Exercício 8:
@@ -240,7 +227,113 @@ int main() {
     }
 
     cout << "Yes" << endl;
-    return 0;
+    */
+
+    /*Exercício 9
+    int t, n;
+    string a, b, c;
+    vector<bool> results;
+    cin>>t;
+
+    while (t < 1 || t > 1000)
+        cin>>t;
+
+    for (int i = 0; i < t; i++) {
+        cin>>n;
+        while (n < 1 || n > 20)
+            cin>>n;
+
+        cin>>a>>b>>c;
+        bool possible = false;
+
+        for (int j = 0; j < n; j++) {
+            if (a[j] != c[j] && b[j] != c[j]){
+                possible = true;
+                break;
+            }
+        }
+
+        results.push_back(possible);
+    }
+
+    for (bool value : results)
+        cout<<(value ? "YES" : "NO")<<endl;
+    */
+
+    /*Exercício 10
+    int n, decrement = -2;
+    cin>>n;
+
+    while (n < 1 || n > 100000)
+        cin>>n;
+
+    for (int i = 0; i < n - 1; i++){
+        if (i%2 == 0 && i != 0)
+            decrement--;
+    }
+
+    cout<<n+decrement;
+
+    // n-1 é usado no loop para amparelhar duas sequências: valores para n e valores
+    // do decremento, os quais alternam de -2 para -2-(k/2), quando k alterna de 2 em 2
+    // valores:
+    [// -2, -2, -3, -3, ..., -n, -n, ...]
+
+    // Observou-se por testes manuais, que os caminhos mais "baratos"/menor quantia de caminhos
+    // eram tais que para os valores de n, havia, de 2 em 2, decrementos iguais. Ou seja,
+    // para a0 e a1 há um mesmo valor a ser descontado (no caso, -2) e assim sucessivamente.
+    // Há, então, um padrão para an e an+1 (termos consecutivos).
+    */
+
+    /*Exercício 11
+        int t, n;
+        cin >> t; // número de testes
+
+        while (t < 1 || t > 100)
+            cin >> t;
+
+        cin.ignore(); // limpa o '\n'
+
+        for (int i = 0; i < t; i++) {
+            cin >> n;
+            while (n < 1 || n > 200000)
+                cin >> n;
+
+            cin.ignore(); // limpa o '\n' antes do getline
+
+            string s;
+            do {
+                getline(cin, s);
+            } while (s.length() != n); // garante que a entrada da string tenha apenas n caracteres
+
+            vector<string> final;
+            int k = 0;
+
+            while (k < n) {
+                string syl = ""; // sílaba atual
+                syl += s[k];     // C (consoante garantida)
+                syl += s[k + 1]; // V
+
+                if (k + 2 < n && (s[k + 2] != 'a' && s[k + 2] != 'e')) {
+                    syl += s[k + 2]; // CVC
+                    k += 3;
+                }
+
+                else
+                    k += 2; // CV
+
+                final.push_back(syl);
+            }
+
+            for (int j = 0; j < final.size(); j++) {
+                cout << final[j];
+
+                if (j != final.size() - 1)
+                    cout << ".";
+            }
+
+            cout << endl;
+        }
     */
 
     /*Exercício 12:
