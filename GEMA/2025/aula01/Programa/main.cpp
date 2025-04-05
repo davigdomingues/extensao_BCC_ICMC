@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    /*ExercÃ­cio 1:
+    /*ExercÃ­Â­cio 1:
     int A, B;
 
     cin>>A>>B;
@@ -16,7 +16,7 @@ int main() {
     cout <<(A+B)/2<< endl;
     */
 
-    /*ExercÃ­cio 2
+    /*ExercÃ­Â­cio 2
     int A, M;
 
     cin>>A>>M;
@@ -31,7 +31,7 @@ int main() {
         cout<<"N"<<endl;
     */
 
-    /*Exercício 3
+    /*ExercÃ­cio 3
     double P1, P2, C1, C2;
     cin>>P1>>C1>>P2>>C2;
 
@@ -48,7 +48,7 @@ int main() {
         cout<<"-1"<<endl;
     */
 
-    /*Exercício 4
+    /*ExercÃ­cio 4
     int Ia, Ib, Fa, Fb;
     cin>>Ia>>Ib>>Fa>>Fb;
 
@@ -62,7 +62,7 @@ int main() {
         cout<<"2";
     */
 
-    /*Exercício 5
+    /*ExercÃ­cio 5
     int n, x = 0;
     cin>>n;
 
@@ -75,7 +75,7 @@ int main() {
     cout<<x<<endl;
     */
 
-    /*Exercício 6
+    /*ExercÃ­cio 6
     int n, k;
     cin>>n>>k;
 
@@ -91,7 +91,7 @@ int main() {
     cout<<i;
     */
 
-    /*Exercício 7
+    /*ExercÃ­cio 7
     int sum = 0, difference;
     double k,w,n;
     cin>>k>>w>>n;
@@ -111,11 +111,11 @@ int main() {
         cout<<endl<<"There is no need for his friend to borrow him money!"<<endl;
     */
 
-    /*Exercício 8
+    /*ExercÃ­cio 8
     int reta, pontosDangerous;
     cin >> reta;
 
-    // Não importa como inserir os valores de x e de y para a generalização, só fiz assim para praticar alocação dinâmica de arrays :)
+    // NÃ£o importa como inserir os valores de x e de y para a generalizaÃ§Ã£o, sÃ³ fiz assim para praticar alocaÃ§Ã£o dinÃ¢mica de arrays :)
     int **trajeto = new int*[reta];
     for (int i = 0; i < reta; i++)
         trajeto[i] = new int[2];
@@ -136,7 +136,7 @@ int main() {
     delete[] trajeto;
     */
 
-    /*Exercício 9
+    /*ExercÃ­cio 9
     int t, a, b, c;
 
     cin>>t;
@@ -174,7 +174,7 @@ int main() {
     }
     */
 
-    /*ExercÃ­cio 10
+    /*ExercÃ­Â­cio 10
     int w;
     cin>>w;
 
