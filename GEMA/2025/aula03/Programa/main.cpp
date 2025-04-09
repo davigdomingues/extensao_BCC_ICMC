@@ -104,29 +104,19 @@ int main() {
             cin>>quadradoMagico[i][j];
     }
 
-    for (int j = 0; j < 3; j++)
+    for (int j = 0; j < 3; j++) {
         linha1 += quadradoMagico[0][j];
-
-    for (int j = 0; j < 3; j++)
         linha2 += quadradoMagico[1][j];
-
-    for (int j = 0; j < 3; j++)
         linha3 += quadradoMagico[2][j];
+    }
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++) {
         coluna1 += quadradoMagico[i][0];
-
-    for (int i = 0; i < 3; i++)
         coluna2 += quadradoMagico[i][1];
-
-    for (int i = 0; i < 3; i++)
         coluna3 += quadradoMagico[i][2];
-
-    for (int i = 0; i < 3; i++)
         diagonal1 += quadradoMagico[i][i];
-
-    for (int i = 0; i < 3; i++)
         diagonal2 += quadradoMagico[i][2 - i];
+    }
 
     if (linha1 == linha2 && linha2 == linha3 &&
         linha3 == coluna1 && coluna1 == coluna2 &&
