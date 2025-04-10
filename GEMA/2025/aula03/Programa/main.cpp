@@ -186,7 +186,26 @@ int main() {
     */
 
     /*Exercício 6:
+    int n, Xi, Xf, Yi, Yf, counter = 0;
+    int M[101][101] = {0};
+    cin>>n;
 
+    for (int i = 0; i < n; i++) {
+        cin>>Xi>>Xf>>Yi>>Yf;
+
+        for (int j = Xi; j < Xf; j++) {
+            for (int k = Yi; k < Yf; k++)
+                M[j][k] = 1;
+        }
+    }
+
+    for (int i = 0; i < 101; i++) {
+        for (int j = 0; j < 101; j++)
+            counter += M[i][j];
+        cout<<endl;
+    }
+
+    cout<<counter;
     */
 
     /* Exercício 7:
