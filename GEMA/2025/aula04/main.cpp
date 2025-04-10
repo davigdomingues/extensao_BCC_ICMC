@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Função do exercício 1:
+// FunÃ§Ã£o do exercÃ­cio 1:
 /* int f91(int N) {
     if (N > 100)
         return N - 10;
@@ -10,7 +10,7 @@ using namespace std;
 }
 */
 
-// Função do exercício 2:
+// FunÃ§Ã£o do exercÃ­cio 2:
 /* bool eh_primo(int x){
     if (x == 1)
         return false;
@@ -28,7 +28,7 @@ using namespace std;
 */
 
 int main() {
-    /*Exercício 1:
+    /*ExercÃ­cio 1:
     int entrada;
     vector <int> entradasF91;
 
@@ -44,7 +44,7 @@ int main() {
         cout<< "f91("<<x<<") = "<<f91(x)<<endl;
     */
 
-    /*Exercício 2:
+    /*ExercÃ­cio 2:
     main() {
     int fatorial = 1, N;
     cin>>N;
@@ -58,7 +58,7 @@ int main() {
     cout<<fatorial<<endl;
     */
 
-    /*Exercício 3:
+    /*ExercÃ­cio 3:
     int x;
 	cin>>x;
 
@@ -69,11 +69,11 @@ int main() {
 		cout << "N" << "\n";
     */
 
-    /*Exercício 4:
+    /*ExercÃ­cio 4:
 
     */
 
-    /*Exercício 5:
+    /*ExercÃ­cio 5:
     int N, testCase = 1;
 
     while (true) {
@@ -82,17 +82,15 @@ int main() {
         if (N == 0)
             break;
 
-        int movimentos = pow(2, N) - 1;
-
         cout << "Teste " << testCase << endl;
-        cout << movimentos << endl;
+        cout << pow(2, N) - 1 << endl;
         cout << endl;
 
         testCase++;
     }
     */
 
-    /*Exercício 6:
+    /*ExercÃ­cio 6:
     int f2, f1 = 1, f0 = 0, N;
     cin>>N;
 
