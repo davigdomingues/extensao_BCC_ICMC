@@ -1,0 +1,43 @@
+Exercício 1
+Crie uma função que recebe um dicionário de produtos e retorne a média ponderada dos preços (sendo os pesos o estoque).
+
+Crie uma função que retorne uma lista com o nome dos produtos com preço menor que 300 reais.
+
+[ ]
+produtos = [
+    {"nome": "Teclado", "preco": 120, "estoque": 50},
+    {"nome": "Mouse", "preco": 80, "estoque": 20},
+    {"nome": "Monitor", "preco": 900, "estoque": 10},
+    {"nome": "Headset", "preco": 150, "estoque": 15},
+    {"nome": "Webcam", "preco": 200, "estoque": 8},
+    {"nome": "SSD 500GB", "preco": 300, "estoque": 25},
+    {"nome": "Placa de Vídeo", "preco": 2500, "estoque": 5},
+    {"nome": "Memória RAM", "preco": 180, "estoque": 30}
+]
+
+Exercício 2
+Usando dicionários, faça uma função que printa sua string em leetcode:
+
+(l33tc0d3 tr0c4 4lgum45 l3tr45 p0r núm3r05, f1c4nd0 4ss1m)
+
+a -> 4
+e -> 3
+i -> 1
+o -> 0
+s -> 5
+
+Exercício 3
+Dado uma lista X de números de 0 até 10 e uma função f(x) qualquer, crie:
+
+Uma lista Y, usando list comprehention, que contém os valores de f(x) para todo elemento de X
+Usando a função round() (que arredonda pro inteiro mais próximo), crie um gráfico vertical da sua função, usando *, tipo esse gráfico de x²:
+*
+****
+*********
+****************
+*************************
+************************************
+*************************************************
+****************************************************************
+*********************************************************************************
+****************************************************************************************************
