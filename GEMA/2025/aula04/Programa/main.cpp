@@ -99,8 +99,10 @@ int main() {
     int fatorial = 1, N;
     cin>>N;
 
-    if (N == 0)
-        cout<<1;
+    if (N == 0) {
+        cout<<1<< endl;
+        return 0;
+    }
 
     for (int i = 1; i <= N; i++)
         fatorial *= i;
