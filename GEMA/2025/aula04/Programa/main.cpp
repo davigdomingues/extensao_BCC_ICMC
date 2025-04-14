@@ -96,7 +96,6 @@ int main() {
     */
 
     /*Exercício 2:
-    main() {
     int fatorial = 1, N;
     cin>>N;
 
